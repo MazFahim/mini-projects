@@ -4,4 +4,3 @@ toastr
 https://www.jotform.com/theme-store/
 https://formoid.com/
 https://codepen.io/
-https://formspree.io/themes
