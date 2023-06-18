@@ -1,3 +1,5 @@
 bootswatch.com
 sweetalert
 toastr
+https://www.jotform.com/theme-store/
+https://formoid.com/
