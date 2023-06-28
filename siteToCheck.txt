@@ -1,3 +1,4 @@
-dice.com - to find tech job
-jira-for documentation
+dice.com - to find tech job - {need usa or canadian visa for this}
+jira- for documentation
 confluence - for documentation
+atlassian - for documentation
