@@ -1,75 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maz Fahim</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <style>
-      /* Add your custom styles here */
-      body {
-          background-color: #f8f9fa; /* Set a background color for the entire page */
-          margin: 0; /* Remove default margin */
-      }
-  
-      .navbar {
-          background-color: #6200ff; /* Set your desired background color for the navbar */
-      }
-  
-      .navbar-nav {
-          margin-left: auto; /* Push the links to the right side */
-      }
-  
-      .navbar-nav a {
-          color: white; /* Set the text color for the links */
-      }
-      
-      .fixed-text {
-          background-color: white; /* Set the background color for the fixed text */
-          padding: 20px; /* Add padding for better visibility */
-          border: 1px solid #ddd; /* Add a border for better visibility */
-      }
-  
-      .skills-section {
-          margin-top: 20px; /* Adjust margin-top to provide space between sections */
-      }
-  
-      .content-under-fixed-text {
-          padding-top: 30px;
-          padding-left: 45px;
-          /* padding-right: 45px; */
-      }
-      .skills-section table {
-        margin: 0 20px; /* Adjust the margin as needed */
-    }
-  </style>
-  
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #6200ff;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav a {
+            color: white;
+        }
+
+        .fixed-text {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .skills-section {
+            margin-top: 20px;
+        }
+
+        .content-under-fixed-text {
+            padding-top: 30px;
+            padding-left: 45px;
+        }
+
+        .skills {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .skills-section {
+            text-align: center;
+        }
+
+        h5 {
+            color: #007bff;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            border: 2px solid #007bff;
+        }
+
+        th, td {
+            border: 1px solid #007bff;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
-              <a class="nav-link" href="#experience">Experience</a>
-              <a class="nav-link" href="#projects">Projects</a>
-              <a class="nav-link" href="#">Education</a>
-              <a class="nav-link" href="#extracurriculumn">Extra Curriculumn</a>
-              <a class="nav-link" href="#links">Links</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#">Education</a>
+                    <a class="nav-link" href="#extracurriculumn">Extra Curriculumn</a>
+                    <a class="nav-link" href="#links">Links</a>
+                </div>
             </div>
-          </div>
         </div>
     </nav>
     <!-- ---------------------- Summary ---------------------- -->
     <div class="row">
         <div class="col">
             <div class="fixed-text">
-                <p>Passionate Python Developer with hands-on experience as a Junior Programmer in an IT firm, specializing in
-                    crafting efficient and scalable solutions. Successfully completed a thesis on Natural Language Processing 
-                    using machine learning techniques. A dedicated professional keenly interested in the dynamic field of Data
+                <p>Passionate Python Developer with hands-on experience as a Junior Programmer in an IT firm,
+                    specializing in
+                    crafting efficient and scalable solutions. Successfully completed a thesis on Natural Language
+                    Processing
+                    using machine learning techniques. A dedicated professional keenly interested in the dynamic field of
+                    Data
                     Science, combining technical expertise with a drive for innovation to tackle complex challenges.
                 </p>
             </div>
@@ -228,8 +266,15 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
