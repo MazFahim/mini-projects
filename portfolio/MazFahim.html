@@ -60,7 +60,15 @@
             border-collapse: collapse;
             border: 2px solid #007bff;
         }
+        .table-container {
+            margin: 20px auto; /* Center the container on the page */
+            width: 73.33%; /* Occupy the middle 10 out of 12 columns (100 / 12 * 10) */
+        }
 
+        .skills-section table {
+            width: 100%; /* Make tables fill the container */
+            margin-bottom: 20px; /* Add some space between tables */
+        }
         th, td {
             border: 1px solid #007bff;
             padding: 10px;
@@ -71,8 +79,12 @@
             color: #fff;
         }
 
+        tr:nth-child(odd) {
+            background-color: #f2f2f2; /* Background color for odd rows */
+        }
+
         tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #ffffff; /* Background color for even rows */
         }
     </style>
 
@@ -91,7 +103,7 @@
                     <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
                     <a class="nav-link" href="#experience">Experience</a>
                     <a class="nav-link" href="#projects">Projects</a>
-                    <a class="nav-link" href="#">Education</a>
+                    <a class="nav-link" href="#education">Education</a>
                     <a class="nav-link" href="#extracurriculumn">Extra Curriculumn</a>
                     <a class="nav-link" href="#links">Links</a>
                 </div>
@@ -120,31 +132,31 @@
                 <div>
                     <h5>Top Expertise</h5>
                 </div>
-                <table class="table table-bordered">
-                    <tr>
-                        <th>Category</th>
-                        <th>Skill Name</th>
-                    </tr>
-                    <tr>
-                        <td>Front End</td>
-                        <td>HTML, CSS, JavaScript</td>
-                    </tr>
-                    <tr>
-                        <td>Back End</td>
-                        <td>Python, C, C#, Node.js, Java</td>
-                    </tr>
-                    <tr>
-                        <td>Frameworks</td>
-                        <td>ASP.NET, Flask, FastApi</td>
-                    </tr>
-                    <tr>
-                        <td>Version Controls</td>
-                        <td>Git, Github</td>
-                    </tr>
-                </table>
+                <div class="table-container">
+                    <table class="table table-bordered">
+                        
+                        <tr>
+                            <td>Front End</td>
+                            <td>HTML, CSS, JavaScript</td>
+                        </tr>
+                        <tr>
+                            <td>Back End</td>
+                            <td>Python, C, C#, Node.js, Java</td>
+                        </tr>
+                        <tr>
+                            <td>Frameworks</td>
+                            <td>ASP.NET, Flask, FastApi</td>
+                        </tr>
+                        <tr>
+                            <td>Version Controls</td>
+                            <td>Git, Github</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
+
     <!-- ---------------------- Experience ---------------------- -->
     <div class="row" id="experience">
         <div class="col content-under-fixed-text">
@@ -152,16 +164,37 @@
                 <div>
                     <h5>Experiences</h5>
                 </div>
-                <table class="table table-bordered">
-                    <tr>
-                        <td>Junior Programmer</td>
-                        <td>Genuine Technology & Research<br /> July 2023 - Present </td>
-                    </tr>
-                    <tr>
-                        <td>Intern</td>
-                        <td>Genuine Technology & Research<br /> April 2023 - June 2023 </td>
-                    </tr>
-                </table>
+                <div class="table-container">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>Junior Programmer</td>
+                            <td>Genuine Technology & Research<br /> July 2023 - Present </td>
+                        </tr>
+                        <tr>
+                            <td>Intern</td>
+                            <td>Genuine Technology & Research<br /> April 2023 - June 2023 </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------- Education ---------------------- -->
+    <div class="row" id="education">
+        <div class="col content-under-fixed-text">
+            <div class="skills-section">
+                <div>
+                    <h5>Education</h5>
+                </div>
+                <div class="table-container">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td colspan="2">Chittagong Independent University<br />BSc,  CGPA : 3.57</td>
+                        </tr>
+                    </table>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -172,22 +205,25 @@
                 <div>
                     <h5>Projects</h5>
                 </div>
-                <table class="table table-bordered">
-                    <tr>
-                        <td><b>Thesis</b></td>
-                    </tr>
-                    <tr>
-                        <td>Bangla Word Sense Disambiguation using Machine Learning Approach</td>
-                        <td>This project train model to extract the meaning of ambiguous words</td>
-                    </tr>
-                    <tr>
-                        <td><b>Hobby Projects</b></td>
-                    </tr>
-                    <tr>
-                        <td>Xoss Coin</td>
-                        <td>A blockchain project that creates and validates cryptocurrency using node.js</td>
-                    </tr>
-                </table>
+                <div class="table-container">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td colspan="2"><b>Thesis</b></td>
+                        </tr>
+                        <tr>
+                            <td>Bangla Word Sense Disambiguation using Machine Learning Approach</td>
+                            <td>This project train model to extract the meaning of ambiguous words</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Hobby Projects</b></td>
+                        </tr>
+                        <tr>
+                            <td>Xoss Coin</td>
+                            <td>A blockchain project that creates and validates cryptocurrency using node.js</td>
+                        </tr>
+                    </table>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -198,46 +234,49 @@
                 <div>
                     <h5>Extra Curriculumn</h5>
                 </div>
-                <table class="table table-bordered">
-                    <tr>
-                        <td><b>Clubs</b></td>
-                    </tr>
-                    <tr>
-                        <td>Organiser</td>
-                        <td>Chittagong Independent University Programming Club</td>
-                    </tr>
-                    <tr>
-                        <td>Vice-President</td>
-                        <td>CIU Robotics Club<br /> July 2022 - November 2023 </td>
-                    </tr>
-                    <tr>
-                        <td>Vice-President</td>
-                        <td>Independent Science And Engineering Club<br /> June 2022 - December 2023 </td>
-                    </tr>
-                    <tr>
-                        <td><b>Events</b></td>
-                    </tr>
-                    <tr>
-                        <td>Organiser And Problem Setter</td>
-                        <td>CIU Tech Fest<br /> July 2023 </td>
-                    </tr>
-                    <tr>
-                        <td>Organiser And Problem Setter</td>
-                        <td>CIU Spring Programming Contest<br /> January 2023 </td>
-                    </tr>
-                    <tr>
-                        <td>Organiser</td>
-                        <td>Engineering Cultural Night<br /> August 2022 </td>
-                    </tr>
-                    <tr>
-                        <td>Organiser</td>
-                        <td>Engineering Cultural Night<br /> August 2019 </td>
-                    </tr>
-                    <tr>
-                        <td>Organiser</td>
-                        <td>IEEE Inaguration And Tech Fest<br /> April 2019 </td>
-                    </tr>
-                </table>
+                <div class="table-container">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td colspan="2"><b>Clubs</b></td>
+                        </tr>
+                        <tr>
+                            <td>Organiser</td>
+                            <td>Chittagong Independent University Programming Club</td>
+                        </tr>
+                        <tr>
+                            <td>Vice-President</td>
+                            <td>CIU Robotics Club<br /> July 2022 - November 2023 </td>
+                        </tr>
+                        <tr>
+                            <td>Vice-President</td>
+                            <td>Independent Science And Engineering Club<br /> June 2022 - December 2023 </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Events</b></td>
+                        </tr>
+                        <tr>
+                            <td>Organiser And Problem Setter</td>
+                            <td>CIU Tech Fest<br /> July 2023 </td>
+                        </tr>
+                        <tr>
+                            <td>Organiser And Problem Setter</td>
+                            <td>CIU Spring Programming Contest<br /> January 2023 </td>
+                        </tr>
+                        <tr>
+                            <td>Organiser</td>
+                            <td>Engineering Cultural Night<br /> August 2022 </td>
+                        </tr>
+                        <tr>
+                            <td>Organiser</td>
+                            <td>Engineering Cultural Night<br /> August 2019 </td>
+                        </tr>
+                        <tr>
+                            <td>Organiser</td>
+                            <td>IEEE Inaguration And Tech Fest<br /> April 2019 </td>
+                        </tr>
+                    </table>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -248,20 +287,24 @@
                 <div>
                     <h5>Stay in Touch</h5>
                 </div>
-                <table class="table table-bordered">
-                    <tr>
-                        <td>Contact professionally: <a href="https://www.linkedin.com/in/maz-fahim-a401351a3">LinkedIn</a></td>
-                    </tr>
-                    <tr>
-                        <td>Reach out directly via email: mazfahim0@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Explore my code: <a href="https://github.com/MazFahim/">Github</a></td>
-                    </tr>
-                    <tr>
-                        <td>Whatsapp: +8801521400144</td>
-                    </tr>
-                </table>
+                <div class="table-container">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>Contact professionally: <a
+                                    href="https://www.linkedin.com/in/maz-fahim-a401351a3">LinkedIn</a></td>
+                        </tr>
+                        <tr>
+                            <td>Reach out directly via email: mazfahim0@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Explore my code: <a href="https://github.com/MazFahim/">Github</a></td>
+                        </tr>
+                        <tr>
+                            <td>Whatsapp: +8801521400144</td>
+                        </tr>
+                    </table>
+                </div>
+                
             </div>
         </div>
     </div>
