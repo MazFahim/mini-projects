@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Card</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Add your custom styles here */
+        :root {
+            --startColor: #2286DF; /* Default start color */
+            --endColor: #F1EF30; /* Default end color */
+            --fontSize: 24px; /* Default font size */
+            --logoSize: 100px; /* Size of the logo */
+            --buttonSize: 40px; /* Size of the button */
+            --buttonBackground: #4CAF50; /* Button background color */
+            --buttonTextColor: #fff; /* Button text color */
+            --spaceAround: 20px; /* Space on both sides */
+            --imageHeight: 300px; /* Height of the image slot */
+            --aboutUsHeight: 80px; /* Height of the "About Us" section */
+            --aboutUsTextMargin: 10px; /* Margin for "About Us" text */
+            --secondRowBackgroundColor: linear-gradient(to right, var(--startColor), var(--endColor));
+        }
+
+        body {
+            margin: 0; /* Remove default margin */
+        }
+
+        .top-div {
+            height: 100px; /* Adjust height as needed */
+            width: 100%; /* Expand across the whole page */
+            background: linear-gradient(to right, var(--startColor), var(--endColor));
+            transition: background 0.5s ease; /* Smooth transition effect */
+            display: flex;
+            justify-content: space-between; /* Space between logo and button */
+            align-items: center;
+            padding: 0 var(--spaceAround); /* Add padding for spacing */
+            box-sizing: border-box; /* Include padding in height */
+        }
+
+        .logo {
+            width: var(--logoSize);
+            height: var(--logoSize);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px; /* Adjust the value as needed */
+            /* Add any additional styling for the logo */
+        }
+
+        .button {
+            width: var(--buttonSize);
+            height: var(--buttonSize);
+            background-color: var(--buttonBackground);
+            color: var(--buttonTextColor);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px; /* Adjust the value as needed */
+            /* Add any additional styling for the button */
+        }
+
+        .image-slot {
+            height: var(--imageHeight);
+            width: 100%;
+            background: #eee; /* Default background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0; /* Remove margin from the image slot */
+        }
+
+        .about-us-section {
+            height: var(--aboutUsHeight);
+            width: 100%;
+            background: linear-gradient(to right, var(--startColor), var(--endColor));
+            display: flex;
+            justify-content: center;
+            margin: 0; 
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: #fff; /* Text color */
+            margin-top: var(--aboutUsTextMargin); /* Adjust the value as needed */
+        }
+/* 
+        .about-us-text h3 {
+            margin: 0; 
+        } */
+
+        .second-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: var(--aboutUsHeight); /* Same height as "About Us" section */
+            background: var(--secondRowBackgroundColor); /* Set background color */
+        }
+
+        .column {
+            text-align: center;
+            padding: 10px;
+        }
+
+        h3, p {
+            font-size: var(--fontSize); /* Set the font size */
+            margin: 0; /* Remove default margin */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Div with dynamic gradient -->
+    <div class="top-div">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="your-logo.png" alt="Logo">
+        </div>
+        
+        <!-- Button -->
+        <button class="button">Click Me</button>
+    </div>
+
+    <!-- Image Slot -->
+    <div class="image-slot">
+        <img src="your-image.jpg" alt="Image">
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-us-section">
+        <h3 class="about-us-text">About Us</h3>
+    </div>
+
+    <!-- Second Row with 6 Columns (Using Bootstrap) -->
+    <div class="second-row">
+        <!-- Placeholder Column -->
+        <div class="column">
+            <!-- Add content as needed -->
+        </div>
+        
+        <!-- Bootstrap Columns for Images -->
+        <div class="column col-md-2">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="column col-md-2">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="column col-md-2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="column col-md-2">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+
+        <!-- Placeholder Column -->
+        <div class="column">
+            <!-- Add content as needed -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
