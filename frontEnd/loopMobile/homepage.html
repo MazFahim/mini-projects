@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Mobile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #05CB65; /* Updated background color */
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 0;
+            flex: 1;
+        }
+
+        nav a.smartphones {
+            background-color: #EAF504; /* Updated button color */
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .logo {
+            padding: 15px;
+        }
+
+        .logo h3, .logo h4 {
+            margin: 0;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <!-- <img src="your-logo.png" alt="Logo" width="50"> -->
+            <i>
+                <h3>Loop</h3>
+                <h4>MOBILE</h4>
+            </i>
+        </div>
+        <a href="#home" class="smartphones">SMARTPHONES</a>
+        <a href="#about">Smartwatches</a>
+        <a href="#services">Laptops</a>
+        <a href="#portfolio">Tablets</a>
+        <a href="#contact">Accessories</a>
+        <a href="#blog">FAQ</a>
+    </nav>
+</body>
+</html>
