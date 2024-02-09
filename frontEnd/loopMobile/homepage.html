@@ -3,73 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loop Mobile</title>
+    <title>Image Gallery</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
 
-        nav {
-            background-color: #05CB65; /* Updated background color */
+        .image-container {
+            padding: 20px;
+        }
+
+        .image-item {
+            width: 100%;
+            max-width: 500px; /* Adjust the max-width as needed */
+            margin: 10px auto;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
         }
 
-        nav a {
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            padding: 14px 0;
-            flex: 1;
-        }
-
-        nav a.smartphones {
-            background-color: #EAF504; /* Updated button color */
-            border-radius: 20px;
-            padding: 10px;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .logo {
-            padding: 15px;
-        }
-
-        .logo h3, .logo h4 {
-            margin: 0;
-            color: white;
-        }
-
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                align-items: stretch;
-            }
+        .image-item img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <!-- <img src="your-logo.png" alt="Logo" width="50"> -->
-            <i>
-                <h3>Loop</h3>
-                <h4>MOBILE</h4>
-            </i>
-        </div>
-        <a href="#home" class="smartphones">SMARTPHONES</a>
-        <a href="#about">Smartwatches</a>
-        <a href="#services">Laptops</a>
-        <a href="#portfolio">Tablets</a>
-        <a href="#contact">Accessories</a>
-        <a href="#blog">FAQ</a>
-    </nav>
+
+<div class="image-container">
+    <div class="image-item">
+        <img src="images/1.jpeg" alt="Image 1">
+    </div>
+    <div class="image-item">
+        <img src="images/2.jpeg" alt="Image 2">
+    </div>
+    <div class="image-item">
+        <img src="images/3.jpeg" alt="Image 3">
+    </div>
+    <div class="image-item">
+        <img src="images/4.jpeg" alt="Image 4">
+    </div>
+    <div class="image-item">
+        <img src="images/5.jpeg" alt="Image 5">
+    </div>
+</div>
+
 </body>
 </html>
