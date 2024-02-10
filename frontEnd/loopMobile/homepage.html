@@ -1,54 +1,232 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
+    <!DOCTYPE html>
+    <html lang="en">
 
-        .image-container {
-            padding: 20px;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loop Mobile</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f4f4f4;
+                /* overflow: hidden; */
+                margin-bottom: 50px;
+            }
 
-        .image-item {
-            width: 100%;
-            max-width: 500px; /* Adjust the max-width as needed */
-            margin: 10px auto;
-            box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
+            .navbar-top {
+                background-color: #33b9b4;
+                overflow-x: hidden;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+            }
 
-        .image-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-    </style>
-</head>
-<body>
+            nav a {
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 14px 0;
+                flex: 1;
+                min-width: 120px;
+                overflow: hidden;
+            }
 
-<div class="image-container">
-    <div class="image-item">
-        <img src="images/1.jpeg" alt="Image 1">
-    </div>
-    <div class="image-item">
-        <img src="images/2.jpeg" alt="Image 2">
-    </div>
-    <div class="image-item">
-        <img src="images/3.jpeg" alt="Image 3">
-    </div>
-    <div class="image-item">
-        <img src="images/4.jpeg" alt="Image 4">
-    </div>
-    <div class="image-item">
-        <img src="images/5.jpeg" alt="Image 5">
-    </div>
-</div>
+            nav a.smartphones {
+                background-color: #faca34;
+                border-radius: 20px;
+                padding: 12px 30px;
+                /* Adjusted padding */
+                flex: 0.25;
+                /* Adjusted flex value */
+                font-size: 16px;
+            }
 
-</body>
-</html>
+            nav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .logo {
+                padding: 15px;
+            }
+
+            .logo h3,
+            .logo h4 {
+                margin: 0;
+                color: white;
+            }
+
+            .image-container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+            .image-item {
+                width: 100%;
+                max-width: 800px;
+                margin: 10px auto;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+            }
+
+            .image-item img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .navbar-bottom {
+                background-color: #33b9b4;
+                overflow: hidden;
+                align-items: center;
+                padding: 30px 20px; 
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .faq-section {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                text-align: left;
+                font-size: 18px;
+            }
+
+            @media (max-width: 767px) {
+                nav {
+                    flex-direction: column;
+                    align-items: stretch;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .image-container {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                .image-item {
+                    max-width: 100%;
+                }
+            }
+
+            @media (max-width: 767px) {
+                .navbar-bottom {
+                    padding: 30px 10px;
+                }
+
+                .bottom-left p {
+                    margin-right: 60px;
+                }
+
+                .bottom-right a {
+                    padding: 16px;
+                    margin-left: 130px;
+                }
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar-top">
+            <div class="logo">
+                <i>
+                    <h3>Loop</h3>
+                    <h4>MOBILE</h4>
+                </i>
+            </div>
+            <a href="#home" class="smartphones">SMARTPHONES</a>
+            <a href="#about">Smartwatches</a>
+            <a href="#services">Laptops</a>
+            <a href="#portfolio">Tablets</a>
+            <a href="#contact">Accessories</a>
+            <a href="#faq">FAQ</a> <!-- Linked to the FAQ section -->
+        </nav>
+
+        <div class="image-container">
+            <div class="image-item">
+                <img src="https://d3d71ba2asa5oz.cloudfront.net/12010467/images/loop_mobile_ebay_12pro_overview.jpg"
+                    alt="Image 2">
+            </div>
+            <div class="image-item">
+                <img src="https://d3d71ba2asa5oz.cloudfront.net/12010467/images/loop_mobile_ebay_12pro_specs.jpg"
+                    alt="Image 3">
+            </div>
+            <div class="image-item">
+                <img src="https://d3d71ba2asa5oz.cloudfront.net/12010467/images/loop_mobile_ebay_4_about_us.jpg"
+                    alt="Image 4">
+            </div>
+            <div class="image-item">
+                <img src="https://d3d71ba2asa5oz.cloudfront.net/12010467/images/loop_mobile_ebay_5_what_is_included.jpg"
+                    alt="Image 5">
+            </div>
+        </div>
+        <nav class="navbar-bottom">
+            <div style="display: flex; align-items: center;justify-content: center;">
+                <!-- <div></div> -->
+                <div style="display: flex; align-items: center;">
+                    <div>
+                        <p style="color: white; font-size: larger;">Frequently Asked Questions</p>
+                    </div>
+                    <div style="margin-left: 600px;">
+                        <a href="https://www.ebay.co.uk/str/alchemytelcosolutions" class="smartphones">Visit Website</a>
+                    </div>
+                </div>
+                <!-- <div></div> -->
+            </div>
+        </nav>
+
+        <div id="faq" class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <p><strong>What is a refurbished device?</strong><br>
+                Our refurbished devices are second-hand and have received a makeover from the inside out. This involves
+                rigorous testing carried out by trained professionals to ensure that they're working flawlessly when they
+                arrive with you. All our devices are supported by their manufacturers, meaning they'll keep receiving
+                regular software and security updates. They're also refurbished using genuine manufacturer parts, and are
+                not only up to 70% cheaper than buying new but are also much better for the environment! By buying
+                refurbished, you can save up to 62kg of CO2 vs buying a new phone, depending on the model. That's the
+                equivalent of a flight from London to Amsterdam!</p>
+
+            <p><strong>How devices are tested?</strong><br>
+                All stock has been processed through our industry-leading 75 point inspection process. Through this process,
+                we conduct a full check to make sure your device is fully functional, testing things including the battery
+                capacity, LCD/screen, Wi-Fi, call connectivity, home/power button, volume button.</p>
+
+            <p><strong>What can you expect from the battery?</strong><br>
+                We test all our batteries and ensure they have at least 80% of their initial charging capacity to ensure the
+                efficiency of your phone, no matter the grade. Most major manufacturers consider any device with a battery
+                capacity of 80% or above to be in optimal condition. This should be more than enough to keep you going
+                throughout the day with normal use, meaning you can carry on chatting, gaming, or watching videos to your
+                heart's content.</p>
+
+            <p><strong>When will my order be dispatched?</strong><br>
+                All orders received before 1 pm are shipped the same day (excluding bank holidays) - this means you won't
+                have to wait long for your order!</p>
+
+            <p><strong>What level of guarantee do Loop offer?</strong><br>
+                We offer a 30-day hassle-free money back guarantee - we'll even accept a return if you change your mind with
+                your purchase.</p>
+
+            <p><strong>Warranty and Returns</strong><br>
+                "All devices can be returned to us for free within 30 days of purchase by contacting our customer service
+                team. Please note we work from Monday-Friday and between 9 am-5 pm, so please expect a delay on replies over
+                the weekend. All devices come with a 12-month warranty (unless stated otherwise) that covers all technical
+                malfunctions, including the camera. The warranty does not cover accidental damage, water damage, loss,
+                theft, or normal wear and tear, including the battery."</p>
+
+            <p><strong>PLEASE NOTE:</strong><br>
+                Past the 30-day point of purchase, we will do our best to offer a repair or issue a fully functional
+                replacement; however, this cannot be guaranteed. We will only issue a refund if we have no stock available
+                or the device is deemed unrepairable. When returning the device, it must be in the same condition it was
+                received and be returned with the accessories provided. Please ensure the device is free of any passcode or
+                personal account such as iCloud, by restoring to factory settings. We reserve the right to charge a fee for
+                any returns that do not comply with these conditions.</p>
+        </div>
+    </body>
+
+    </html>
