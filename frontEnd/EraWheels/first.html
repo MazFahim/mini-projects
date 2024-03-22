@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #2E2E29;
+        }
+        #topNav{
+            text-align: center;
+            color: white; 
+            overflow: hidden;  
+            padding: 14px 0;
+        }
+        #topSection{
+            height: 120px;
+            background-color: #2E2E29;
+            position: relative;
+        }
+        #topSection img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 160%; 
+            max-height: 160%;
+        }
+        nav {
+            background-color: #51514C;
+            overflow: hidden;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+            width: 20%;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 0;
+            text-decoration: dashed;
+        }
+        li a:hover {
+            background-color: #FA4351;
+            color: chartreuse;
+        }
+        #middleSection{
+            width: 100vw; 
+            height: 125vh;
+            background-color: #2E2E29;
+            background-image: url('pictures/pic2.jpg');
+            background-size: cover;
+            background-position: center; 
+        }
+        #lowersection{          
+            position: relative;
+            width: 100%;
+            height: 80vh;  
+        }
+        .info:nth-child(2) {
+            top: 70%; 
+        }
+        #info {
+            position: relative;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%;
+            padding: 20px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: azure;
+        }
+        #info h1 {
+            text-align: left;
+            font-size: 32px; 
+        }
+
+        #info p {
+            text-align: justify; 
+            font-size: 16px; 
+        }
+
+        .related-search {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 90%;
+            margin: 0 auto; 
+        }
+        .related-search-content {
+            display: none;
+            color: #fff;
+        }
+        .related-search-button-container {
+            /* text-align: center; */
+            position: relative;
+            /* display: inline-block; */
+            border-bottom: 1px solid #fff;
+            margin-bottom: 10px;  
+        }
+        .related-search-button {
+            padding: 10px 10px;
+            margin-right: 900px;
+            background-color: #2E2E29;
+            color: #fff;
+            border: none;
+            font-size: large;
+        } 
+        .related-search-button::after {
+            content: '\25BC'; 
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-60%);
+        } 
+
+
+        #review {
+            margin: 0;
+            padding: 0;
+        }
+        #review img{
+            position: relative;
+            display: block;
+            width: 100%; 
+            height: auto; 
+            margin: 0; 
+            padding: 0; 
+            border: none; 
+        }
+
+        #portfolio {
+            width: 70%; 
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #portfolio h2{
+            text-align: center;
+            color: aliceblue;
+            margin-bottom: 4vh;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px; 
+        }
+
+        .image-row img {
+            width: calc(20% - 10px); 
+            max-height: 200px;
+            margin-right: 10px; 
+        }
+
+        .image-row img:last-child {
+            margin-right: 0; 
+        }
+    </style>
+</head>
+<body>
+    <nav id="topNav">
+        WORLDWIDE FREE SHIPPING
+    </nav>
+    <div id="topSection">
+        <img src="pictures/logo.png" alt="Your Image">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">STORE HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">ADD TO FAVOURITE</a></li>
+            <li><a href="#">FEEDBACK</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div id="middleSection"></div>
+    <div id="lowersection">
+        <div id="info">
+            <h1>A2Z STYLING STORY</h1>
+            <p>Established in 2015, our company has been a driving force in the automotive industry, 
+                specializing in expert sewing services for steering wheel leather renewal. Our team, with a wealth of experience from 
+                collaborations with original brand manufacturers, delivers exclusive, high-quality services. Recently venturing into e-commerce, 
+                we've served over 3000 clients globally, cutting out middlemen for a direct connection. Explore our portfolio for a visual testament
+                 to our craftsmanship, and feel free to request more examples. Trust professionals for your steering wheel renewal 
+                 – choose us for an unparalleled driving experience.</p>
+    
+        </div>
+        <div id="info">
+            <h1>***Title***</h1>
+            <p>***Details***</p>
+        </div>
+        <div id="info">
+            <h1>***Title***</h1>
+            <p>***Details***</p>
+        </div>
+    </div>   
+    
+    
+    <div class="related-search">
+        <div class="related-search-button-container">
+          <button class="related-search-button" onclick="toggleRelatedSearch(1)">SHIPPING AND RETURN POLICY</button>
+        </div>
+        <div class="related-search-content" id="related-search-content-1">
+          <h3>Most of our steering wheels are readily available and will be dispatched promptly upon receiving payment.
+            However, certain wheels may require additional craftsmanship if changes are requested. We offer both standard
+            and express delivery options, though specific shipping details are best discuss before purchase. Each order is
+            unique, and we can provide the exact delivery time for your specific location. We set longer delivery time to
+            protect ourself of any delay issues. We can assure all order will be delivered!
+            Usually the handling time of the item is 10 working days before dispatch, if there would be a delay or
+            some sort of misunderstanding it might take longer than stated, our team will update customers in these
+            situations promptly.
+            PLEASE NOTE: DELIVERY INFO DISPLAYED ON EBAY DELIVERY SECTION ( COMPLAINTS ACCEPTED
+            ONLY IF YOUR ORDER IS LATE)
+            To ensure a seamless experience, we&#39;ve set a conservative dispatch time, allowing flexibility to prevent any
+            potential issues.
+            In the event that something goes amiss with our service, we accept returns within 14 days after delivery. It&#39;s
+            important to note that the fitment of the steering wheel to your vehicle is your responsibility. We provide detailed
+            fitment descriptions in our listings, but if you have any uncertainties, please consult our team before shipping to
+            ensure compatibility. We are committed to delivering a satisfactory experience and are here to assist with any
+            inquiries or concerns you may have.</h3>
+        </div>
+        <div class="related-search-button-container">
+            <button class="related-search-button" onclick="toggleRelatedSearch(2)">CONATACT US</button>
+          </div>
+          <div class="related-search-content" id="related-search-content-2">
+            <h3>For any inquiries or assistance, feel free to reach out to us through eBay messages or instagram,. Our dedicated
+                team will respond at the earliest convenience. Please understand that responses during weekends may take a bit
+                longer. If you prefer a quicker response, you can leave alternative contact information, and we&#39;ll ensure to
+                address your needs promptly. Your satisfaction is our priority, and we appreciate your understanding. We look
+                forward to assisting you with any questions or concerns you may have.
+                INSTAGRAM A2ZSTYLING.</h3>
+          </div>
+          <div class="related-search-button-container">
+            <button class="related-search-button" onclick="toggleRelatedSearch(3)">FITMENT</button>
+          </div>
+          <div class="related-search-content" id="related-search-content-3">
+            <h3>The fitment information provided below is not a guarantee of compatibility. It is your responsibility to ensure that
+                the steering wheel will suit your particular model. While the steering wheel may physically fit, errors may occur
+                due to missing features or differences in airbag stages. We highly recommend consulting with our team or visiting
+                a local dealer shop if you are unsure.</h3>
+          </div>
+    </div>
+
+
+    <div id="review">
+        <img src="pictures/review.png" alt="Image 1">
+    </div>
+    <div id="portfolio">
+        <h2>VIEW OUR PORTFOLIO</h2>
+        <div class="image-row">
+            <img src="pictures/pf1.jpeg" alt="Image 1">
+            <img src="pictures/pf2.jpeg" alt="Image 2">
+            <img src="pictures/pf3.jpeg" alt="Image 3">
+            <img src="pictures/pf10.jpeg" alt="Image 3">
+            <img src="pictures/pf11.jpeg" alt="Image 3">
+        </div>
+        <div class="image-row">
+            <img src="pictures/pf4.jpeg" alt="Image 4">
+            <img src="pictures/pf5.jpeg" alt="Image 5">
+            <img src="pictures/pf6.jpeg" alt="Image 6">
+            <img src="pictures/pf12.jpeg" alt="Image 6">
+            <img src="pictures/pf13.jpeg" alt="Image 6">
+        </div>
+        <div class="image-row">
+            <img src="pictures/pf7.jpeg" alt="Image 7">
+            <img src="pictures/pf8.jpeg" alt="Image 8">
+            <img src="pictures/pf14.jpeg" alt="Image 6">
+            <img src="pictures/pf15.jpeg" alt="Image 6">
+            <img src="pictures/pf9.jpeg" alt="Image 9">
+        </div>
+    </div>
+    <script>
+        function toggleRelatedSearch(num) {
+          var relatedSearchContent = document.getElementById('related-search-content-' + num);
+          if (relatedSearchContent.style.display === 'none') {
+            relatedSearchContent.style.display = 'block';
+          } else {
+            relatedSearchContent.style.display = 'none';
+          }
+        }
+      </script>
+</body>
+</html>
