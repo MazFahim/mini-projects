@@ -25,9 +25,17 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            max-width: 100%; 
+            max-height: 100%;
+        }
+        /* #topSection img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             max-width: 160%; 
             max-height: 160%;
-        }
+        } */
         nav {
             background-color: #51514C;
             overflow: hidden;
@@ -57,9 +65,12 @@
             width: 100vw; 
             height: 125vh;
             background-color: #2E2E29;
-            background-image: url('pictures/pic2.jpg');
+            /* background-image: url('pictures/pic2.jpg'); */
             background-size: cover;
             background-position: center; 
+        }
+        #middleSection img{
+            width: 100%;
         }
         #lowersection{          
             position: relative;
@@ -138,8 +149,10 @@
             padding: 0; 
             border: none; 
         }
-
-        #portfolio {
+        #portfolio img{
+            width: 100%;
+        }
+        /* #portfolio {
             width: 70%; 
             margin: 0 auto;
             padding: 20px;
@@ -163,7 +176,7 @@
 
         .image-row img:last-child {
             margin-right: 0; 
-        }
+        } */
     </style>
 </head>
 <body>
@@ -171,7 +184,8 @@
         WORLDWIDE FREE SHIPPING
     </nav>
     <div id="topSection">
-        <img src="pictures/logo.png" alt="Your Image">
+        <!-- <img src="pictures/logo.png" alt="Your Image"> -->
+        <img src="https://i.ibb.co/Z6VtHtP/PHOTO-2024-03-24-05-51-27.jpg" alt="Your Image">
     </div>
     <nav>
         <ul>
@@ -182,7 +196,9 @@
             <li><a href="#">CONTACT US</a></li>
         </ul>
     </nav>
-    <div id="middleSection"></div>
+    <div id="middleSection">
+        <img src="https://i.ibb.co/f8d83KW/16-by-9-copy.jpg" alt="Image 1">
+    </div>
     <div id="lowersection">
         <div id="info">
             <h1>A2Z STYLING STORY</h1>
@@ -252,10 +268,12 @@
 
 
     <div id="review">
-        <img src="pictures/review.png" alt="Image 1">
+        <!-- <img src="pictures/review.png" alt="Image 1"> -->
+        <img src="https://i.ibb.co/6ZpXpJ7/PHOTO-2024-03-24-05-51-36.jpg" alt="Image 1">
     </div>
     <div id="portfolio">
-        <h2>VIEW OUR PORTFOLIO</h2>
+        <img src="https://i.ibb.co/D5nPmg9/PHOTO-2024-03-24-12-40-20.jpg" alt="Image 1">
+        <!-- <h2>VIEW OUR PORTFOLIO</h2>
         <div class="image-row">
             <img src="pictures/pf1.jpeg" alt="Image 1">
             <img src="pictures/pf2.jpeg" alt="Image 2">
@@ -276,7 +294,7 @@
             <img src="pictures/pf14.jpeg" alt="Image 6">
             <img src="pictures/pf15.jpeg" alt="Image 6">
             <img src="pictures/pf9.jpeg" alt="Image 9">
-        </div>
+        </div> -->
     </div>
     <script>
         function toggleRelatedSearch(num) {
