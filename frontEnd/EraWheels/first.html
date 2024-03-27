@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body{
             margin: 0;
@@ -25,8 +28,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            max-width: 100%; 
-            max-height: 100%;
+            max-width: 75%; 
+            max-height: 75%;
         }
         /* #topSection img{
             position: absolute;
@@ -75,12 +78,13 @@
         #lowersection{          
             position: relative;
             width: 100%;
-            height: 80vh;  
+            height: 65vh;
+            margin-top: 20px;  
         }
-        .info:nth-child(2) {
+        /* .info:nth-child(2) {
             top: 70%; 
-        }
-        #info {
+        } */
+        .info {
             position: relative;
             top: 15%;
             left: 50%;
@@ -90,14 +94,30 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             color: azure;
         }
-        #info h1 {
+
+        .info h1 {
             text-align: left;
-            font-size: 32px; 
+            font-size: 2em; 
         }
 
-        #info p {
+        .info p {
             text-align: justify; 
-            font-size: 16px; 
+            font-size: 1em; 
+        }
+
+        .wheelInfo{
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%;
+            padding-top: 0;
+            padding: 20px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: azure;  
+            font: 1em; 
         }
 
         .related-search {
@@ -105,7 +125,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 90%;
+            width: 80%;
             margin: 0 auto; 
         }
         .related-search-content {
@@ -121,7 +141,8 @@
         }
         .related-search-button {
             padding: 10px 10px;
-            margin-right: 900px;
+            /* margin-right: 900px; */
+            margin-right: 5%;
             background-color: #2E2E29;
             color: #fff;
             border: none;
@@ -152,7 +173,7 @@
         #portfolio img{
             width: 100%;
         }
-        /* #portfolio {
+        #portfolio {
             width: 70%; 
             margin: 0 auto;
             padding: 20px;
@@ -176,6 +197,16 @@
 
         .image-row img:last-child {
             margin-right: 0; 
+        } 
+        .trial ol{
+    list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex
+        }
+        /* .trial li{ 
+            display: inline;
+            margin-bottom: 10px;
         } */
     </style>
 </head>
@@ -185,7 +216,7 @@
     </nav>
     <div id="topSection">
         <!-- <img src="pictures/logo.png" alt="Your Image"> -->
-        <img src="https://i.ibb.co/Z6VtHtP/PHOTO-2024-03-24-05-51-27.jpg" alt="Your Image">
+        <img src="https://i.ibb.co/BK6K6YP/Png-5.png" alt="Your Image">
     </div>
     <nav>
         <ul>
@@ -197,10 +228,10 @@
         </ul>
     </nav>
     <div id="middleSection">
-        <img src="https://i.ibb.co/f8d83KW/16-by-9-copy.jpg" alt="Image 1">
+        <img src="https://i.ibb.co/HNTNcMy/16-by-9-copy.jpg" alt="Image 1">
     </div>
     <div id="lowersection">
-        <div id="info">
+        <div class="info">
             <h1>A2Z STYLING STORY</h1>
             <p>Established in 2015, our company has been a driving force in the automotive industry, 
                 specializing in expert sewing services for steering wheel leather renewal. Our team, with a wealth of experience from 
@@ -210,16 +241,25 @@
                  – choose us for an unparalleled driving experience.</p>
     
         </div>
-        <div id="info">
-            <h1>***Title***</h1>
-            <p>***Details***</p>
-        </div>
-        <div id="info">
-            <h1>***Title***</h1>
-            <p>***Details***</p>
-        </div>
+
     </div>   
-    
+    <div class="wheelInfo">
+        <h1>STEERING WHEELS INFO</h1>
+        <p>When it comes to our steering wheels, what you see is what you get?no additional functions or features are
+        included unless explicitly described. Rest assured, all our steering wheels are original, not from China
+        manufacturers.<br>However, if you desire extra functions or unique features, we&#39;re here to tailor your experience. Options include:</p>
+        <ol class="list-group vertical-list">
+            <li><b>Reshaping the Wheel:</b> Opt for a flat bottom or a combination of a flat bottom and grip for a
+            personalized touch.</li>
+        <li><b>Changing Wheel Style:</b> Tailor the overall style of the wheel to suit your taste.</li>
+        <li><b>Other Customizations:</b> Explore modifications to various steering wheel parts to achieve a bespoke
+        look.</li>
+        </ol>
+        
+        <p>Please note that fees may apply for these customization services. To guarantee your satisfaction, reach out to
+        our team to discuss your preferences and any associated costs. We are dedicated to providing steering wheels
+        that match your unique style and driving preferences.</p>
+    </div>
     
     <div class="related-search">
         <div class="related-search-button-container">
@@ -269,32 +309,32 @@
 
     <div id="review">
         <!-- <img src="pictures/review.png" alt="Image 1"> -->
-        <img src="https://i.ibb.co/6ZpXpJ7/PHOTO-2024-03-24-05-51-36.jpg" alt="Image 1">
+        <img src="https://i.ibb.co/ZWDkNN9/Screenshot-2024-03-26-at-15-25-32.png" alt="Image 1">
     </div>
     <div id="portfolio">
-        <img src="https://i.ibb.co/D5nPmg9/PHOTO-2024-03-24-12-40-20.jpg" alt="Image 1">
-        <!-- <h2>VIEW OUR PORTFOLIO</h2>
+        <!-- <img src="https://i.ibb.co/D5nPmg9/PHOTO-2024-03-24-12-40-20.jpg" alt="Image 1"> -->
+        <h2>VIEW OUR PORTFOLIO</h2>
         <div class="image-row">
-            <img src="pictures/pf1.jpeg" alt="Image 1">
-            <img src="pictures/pf2.jpeg" alt="Image 2">
-            <img src="pictures/pf3.jpeg" alt="Image 3">
-            <img src="pictures/pf10.jpeg" alt="Image 3">
-            <img src="pictures/pf11.jpeg" alt="Image 3">
+            <img src="https://i.ibb.co/t3T9NNg/IMG-3936.jpg" alt="Image 1">
+            <img src="https://i.ibb.co/4fpKZLb/IMG-3934.jpg" alt="Image 2">
+            <img src="https://i.ibb.co/pfT50JY/IMG-3899.jpg" alt="Image 3">
+            <img src="https://i.ibb.co/7bNfMP1/IMG-3898.jpg" alt="Image 3">
+            <img src="https://i.ibb.co/dPY4nk2/IMG-3896.jpg" alt="Image 3">
         </div>
         <div class="image-row">
-            <img src="pictures/pf4.jpeg" alt="Image 4">
-            <img src="pictures/pf5.jpeg" alt="Image 5">
-            <img src="pictures/pf6.jpeg" alt="Image 6">
-            <img src="pictures/pf12.jpeg" alt="Image 6">
-            <img src="pictures/pf13.jpeg" alt="Image 6">
+            <img src="https://i.ibb.co/K235ZMx/IMG-3897.jpg" alt="Image 4">
+            <img src="https://i.ibb.co/sPv1xR4/IMG-3933.jpg" alt="Image 5">
+            <img src="https://i.ibb.co/mXdqXbL/IMG-3932.jpg" alt="Image 6">
+            <img src="https://i.ibb.co/BN1Hg7j/IMG-3931.jpg" alt="Image 6">
+            <img src="https://i.ibb.co/YRdSwwX/IMG-3929.jpg" alt="Image 6">
         </div>
         <div class="image-row">
-            <img src="pictures/pf7.jpeg" alt="Image 7">
-            <img src="pictures/pf8.jpeg" alt="Image 8">
-            <img src="pictures/pf14.jpeg" alt="Image 6">
-            <img src="pictures/pf15.jpeg" alt="Image 6">
-            <img src="pictures/pf9.jpeg" alt="Image 9">
-        </div> -->
+            <img src="https://i.ibb.co/h85T9Kk/IMG-3927.jpg" alt="Image 7">
+            <img src="https://i.ibb.co/nrxtJVv/IMG-3926.jpg" alt="Image 8">
+            <img src="https://i.ibb.co/Cb2XbLn/IMG-3925.jpg" alt="Image 6">
+            <img src="https://i.ibb.co/LhzJg56/IMG-3924.jpg" alt="Image 6">
+            <img src="https://i.ibb.co/3WJ9CFt/IMG-3923.jpg" alt="Image 9">
+        </div>
     </div>
     <script>
         function toggleRelatedSearch(num) {
