@@ -31,14 +31,6 @@
             max-width: 75%; 
             max-height: 75%;
         }
-        /* #topSection img{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 160%; 
-            max-height: 160%;
-        } */
         nav {
             background-color: #51514C;
             overflow: hidden;
@@ -66,9 +58,8 @@
         }
         #middleSection{
             width: 100vw; 
-            height: 125vh;
+            height: auto;
             background-color: #2E2E29;
-            /* background-image: url('pictures/pic2.jpg'); */
             background-size: cover;
             background-position: center; 
         }
@@ -78,21 +69,18 @@
         #lowersection{          
             position: relative;
             width: 100%;
-            height: 65vh;
-            margin-top: 20px;  
+            height: auto;
+            margin-top: 7em;
+            margin-bottom: 3em;  
         }
-        /* .info:nth-child(2) {
-            top: 70%; 
-        } */
+
         .info {
             position: relative;
-            top: 15%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             max-width: 80%;
             padding: 20px; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             color: azure;
+            margin: 20px auto;
         }
 
         .info h1 {
@@ -105,57 +93,9 @@
             font-size: 1em; 
         }
 
-        .wheelInfo{
-            position: relative;
-            width: 100%;
-            height: 50vh;
-            top: 10%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 80%;
-            padding-top: 0;
-            padding: 20px; 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            color: azure;  
-            font: 1em; 
+        .info ol, .info ul {
+            white-space: nowrap;
         }
-
-        .related-search {
-            padding-top: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 80%;
-            margin: 0 auto; 
-        }
-        .related-search-content {
-            display: none;
-            color: #fff;
-        }
-        .related-search-button-container {
-            /* text-align: center; */
-            position: relative;
-            /* display: inline-block; */
-            border-bottom: 1px solid #fff;
-            margin-bottom: 10px;  
-        }
-        .related-search-button {
-            padding: 10px 10px;
-            /* margin-right: 900px; */
-            margin-right: 5%;
-            background-color: #2E2E29;
-            color: #fff;
-            border: none;
-            font-size: large;
-        } 
-        .related-search-button::after {
-            content: '\25BC'; 
-            position: absolute;
-            top: 50%;
-            right: 5px;
-            transform: translateY(-60%);
-        } 
-
 
         #review {
             margin: 0;
@@ -198,16 +138,7 @@
         .image-row img:last-child {
             margin-right: 0; 
         } 
-        .trial ol{
-    list-style: none;
-  margin: 0;
-  padding: 0;
-  display: inline-flex
-        }
-        /* .trial li{ 
-            display: inline;
-            margin-bottom: 10px;
-        } */
+        
     </style>
 </head>
 <body>
@@ -215,7 +146,6 @@
         WORLDWIDE FREE SHIPPING
     </nav>
     <div id="topSection">
-        <!-- <img src="pictures/logo.png" alt="Your Image"> -->
         <img src="https://i.ibb.co/BK6K6YP/Png-5.png" alt="Your Image">
     </div>
     <nav>
@@ -242,31 +172,43 @@
     
         </div>
 
-    </div>   
-    <div class="wheelInfo">
-        <h1>STEERING WHEELS INFO</h1>
-        <p>When it comes to our steering wheels, what you see is what you get?no additional functions or features are
-        included unless explicitly described. Rest assured, all our steering wheels are original, not from China
-        manufacturers.<br>However, if you desire extra functions or unique features, we&#39;re here to tailor your experience. Options include:</p>
-        <ol class="list-group vertical-list">
-            <li><b>Reshaping the Wheel:</b> Opt for a flat bottom or a combination of a flat bottom and grip for a
-            personalized touch.</li>
-        <li><b>Changing Wheel Style:</b> Tailor the overall style of the wheel to suit your taste.</li>
-        <li><b>Other Customizations:</b> Explore modifications to various steering wheel parts to achieve a bespoke
-        look.</li>
-        </ol>
-        
-        <p>Please note that fees may apply for these customization services. To guarantee your satisfaction, reach out to
-        our team to discuss your preferences and any associated costs. We are dedicated to providing steering wheels
-        that match your unique style and driving preferences.</p>
-    </div>
-    
-    <div class="related-search">
-        <div class="related-search-button-container">
-          <button class="related-search-button" onclick="toggleRelatedSearch(1)">SHIPPING AND RETURN POLICY</button>
+        <div class="info">
+            <h1>STEERING WHEELS INFO</h1>
+            <p>When it comes to our steering wheels, what you see is what you get?no additional functions or features are
+            included unless explicitly described. Rest assured, all our steering wheels are original, not from China
+            manufacturers.<br>However, if you desire extra functions or unique features, we&#39;re here to tailor your experience. Options include:</p>
+            <ol class="list-group vertical-list">
+                <li><b>Choose a Different Style:</b> Explore various steering wheel styles showcased in our photo selections.</li>
+                <li><b>Shift Paddle Version:</b> Request a shift paddle version for added control.</li>
+                <li><b>Reshape Steering Wheel:</b> Personalize your driving experience by asking for a reshaped steering wheel.</li>
+                <li><b>Additional Features:</b> Tailor your steering wheel with features such as heating, lane assistance, Vibro, or Touch capabilities.</li>
+            </ol>
+            
+            <p>Please note that fees may apply for these customization services. To guarantee your satisfaction, reach out to
+            our team to discuss your preferences and any associated costs. We are dedicated to providing steering wheels
+            that match your unique style and driving preferences.</p>
+            <p></p>
+            <p></p>
         </div>
-        <div class="related-search-content" id="related-search-content-1">
-          <h3>Most of our steering wheels are readily available and will be dispatched promptly upon receiving payment.
+        
+        <div class="info">
+            <h1>STYLES</h1>
+            <p>At A2Z STYLING we understand that individual preferences vary. Our steering wheels can be customized to
+                meet your unique wishes, but it&#39;s crucial to coordinate with our team before making a purchase. If specific
+                changes are desired, kindly engage with our team beforehand to ensure your steering wheel aligns with your
+                vision.</p>
+            <p>We offer a range of style changes, including:</p>
+            <ol class="list-group vertical-list">
+                <li><b>Reshaping the Wheel:</b> Opt for a flat bottom or a combination of a flat bottom and grip for a
+                personalized touch.</li>
+                <li><b>Changing Wheel Style:</b> Tailor the overall style of the wheel to suit your taste.</li>
+                <li><b>Other Customizations:</b> Explore modifications to various steering wheel parts to achieve a bespoke
+                look.</li>
+            </ol>
+        </div>
+        <div class="info">
+            <h1>SHIPPING AND RETURN POLICY</h1>
+            <p>Most of our steering wheels are readily available and will be dispatched promptly upon receiving payment.
             However, certain wheels may require additional craftsmanship if changes are requested. We offer both standard
             and express delivery options, though specific shipping details are best discuss before purchase. Each order is
             unique, and we can provide the exact delivery time for your specific location. We set longer delivery time to
@@ -282,37 +224,32 @@
             important to note that the fitment of the steering wheel to your vehicle is your responsibility. We provide detailed
             fitment descriptions in our listings, but if you have any uncertainties, please consult our team before shipping to
             ensure compatibility. We are committed to delivering a satisfactory experience and are here to assist with any
-            inquiries or concerns you may have.</h3>
+            inquiries or concerns you may have.</p>
         </div>
-        <div class="related-search-button-container">
-            <button class="related-search-button" onclick="toggleRelatedSearch(2)">CONATACT US</button>
-          </div>
-          <div class="related-search-content" id="related-search-content-2">
-            <h3>For any inquiries or assistance, feel free to reach out to us through eBay messages or instagram,. Our dedicated
+        <div class="info">
+            <h1>CONTACT US</h1>
+            <p>For any inquiries or assistance, feel free to reach out to us through eBay messages or instagram,. Our dedicated
                 team will respond at the earliest convenience. Please understand that responses during weekends may take a bit
                 longer. If you prefer a quicker response, you can leave alternative contact information, and we&#39;ll ensure to
                 address your needs promptly. Your satisfaction is our priority, and we appreciate your understanding. We look
                 forward to assisting you with any questions or concerns you may have.
-                INSTAGRAM A2ZSTYLING.</h3>
-          </div>
-          <div class="related-search-button-container">
-            <button class="related-search-button" onclick="toggleRelatedSearch(3)">FITMENT</button>
-          </div>
-          <div class="related-search-content" id="related-search-content-3">
-            <h3>The fitment information provided below is not a guarantee of compatibility. It is your responsibility to ensure that
+                INSTAGRAM A2ZSTYLING.</p>
+        </div>
+        <div class="info">
+            <h1>FITMENT</h1>
+            <p>The fitment information provided below is not a guarantee of compatibility. It is your responsibility to ensure that
                 the steering wheel will suit your particular model. While the steering wheel may physically fit, errors may occur
                 due to missing features or differences in airbag stages. We highly recommend consulting with our team or visiting
-                a local dealer shop if you are unsure.</h3>
-          </div>
-    </div>
-
+                a local dealer shop if you are unsure.</p>
+            
+        </div>
+    
+    </div>   
 
     <div id="review">
-        <!-- <img src="pictures/review.png" alt="Image 1"> -->
         <img src="https://i.ibb.co/ZWDkNN9/Screenshot-2024-03-26-at-15-25-32.png" alt="Image 1">
     </div>
     <div id="portfolio">
-        <!-- <img src="https://i.ibb.co/D5nPmg9/PHOTO-2024-03-24-12-40-20.jpg" alt="Image 1"> -->
         <h2>VIEW OUR PORTFOLIO</h2>
         <div class="image-row">
             <img src="https://i.ibb.co/t3T9NNg/IMG-3936.jpg" alt="Image 1">
@@ -336,15 +273,6 @@
             <img src="https://i.ibb.co/3WJ9CFt/IMG-3923.jpg" alt="Image 9">
         </div>
     </div>
-    <script>
-        function toggleRelatedSearch(num) {
-          var relatedSearchContent = document.getElementById('related-search-content-' + num);
-          if (relatedSearchContent.style.display === 'none') {
-            relatedSearchContent.style.display = 'block';
-          } else {
-            relatedSearchContent.style.display = 'none';
-          }
-        }
-      </script>
+    
 </body>
 </html>
