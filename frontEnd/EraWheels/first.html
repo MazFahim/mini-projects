@@ -138,7 +138,36 @@
         .image-row img:last-child {
             margin-right: 0; 
         } 
-        
+        @media only screen and (max-width: 768px) {
+            nav li {
+                width: 33.33%;
+            }
+            .info {
+                max-width: 90%;
+            }
+            .image-row {
+                flex-wrap: wrap;
+            }
+            .image-row img {
+                width: calc(50% - 10px);
+                margin-bottom: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            nav li {
+                width: 50%;
+            }
+            .info {
+                max-width: 100%;
+            }
+            .image-row img {
+                width: calc(50% - 10px);
+            }
+            .image-row img {
+                width: calc(100% - 10px);
+            }
+        }
     </style>
 </head>
 <body>
