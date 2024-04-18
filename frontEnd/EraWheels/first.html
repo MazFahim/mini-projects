@@ -110,57 +110,40 @@
             position: relative;
             justify-content: center;
             width: 90%; 
-            padding: 0;
+            padding: 20px;
             height: auto;
-            margin-top: 7em;
-            margin-bottom: 3em; 
-            margin-left: 6em;
+            margin-top: 1em;
+            margin-bottom: 1em; 
+            margin-left: 5%;
         }
         #portfolio h2{
             text-align: center;
-            color: aliceblue;
-            margin-bottom: 4vh;
+            color: azure;
+            margin-bottom: 1vh;
         } 
-        .image-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px; 
+        
+        .img-container {
+            position: relative;
+            width: 130%; /* Increase width by 50% */
+            padding-top: 100%; /* 1:1 Aspect Ratio */
+            margin-bottom: 15px;
         }
-
-        .image-row img {
-            width: calc(20% - 10px); 
-            max-height: 200px;
-            margin-right: 10px; 
+        .img-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-
-         
-        @media only screen and (max-width: 768px) {
-            nav li {
-                width: 33.33%;
-            }
-            .info {
-                max-width: 90%;
-            }
-            .image-row {
-                flex-wrap: wrap;
-            }
-            .image-row img {
-                width: calc(50% - 10px);
-                margin-bottom: 10px;
-            }
+        
+        .col-sm-2 {
+            width: 90%; /* Adjust the width of image columns */
+            margin: 0 auto; /* Center the columns horizontally */
         }
-
-        @media only screen and (max-width: 576px) {
-            nav li {
-                width: 50%;
-            }
-            .info {
-                max-width: 100%;
-            }
-            .image-row img {
-                width: calc(100% - 10px);
-                margin-bottom: 10px;
-            }
+        /* Add margin between images within columns */
+        .img-container + .img-container {
+            margin-top: 15px; /* Add margin to create space between images */
         }
     </style>
 </head>
@@ -270,7 +253,8 @@
     </div>
     <div id="portfolio">
         <h2>VIEW OUR PORTFOLIO</h2>
-        <div class="image-row">
+    </div>
+    <!--     <div class="image-row">
             <img src="https://i.ibb.co/t3T9NNg/IMG-3936.jpg" alt="Image 1">
             <img src="https://i.ibb.co/4fpKZLb/IMG-3934.jpg" alt="Image 2">
             <img src="https://i.ibb.co/pfT50JY/IMG-3899.jpg" alt="Image 3">
@@ -290,6 +274,92 @@
             <img src="https://i.ibb.co/Cb2XbLn/IMG-3925.jpg" alt="Image 6">
             <img src="https://i.ibb.co/LhzJg56/IMG-3924.jpg" alt="Image 6">
             <img src="https://i.ibb.co/3WJ9CFt/IMG-3923.jpg" alt="Image 9">
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <!-- First Row -->
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/t3T9NNg/IMG-3936.jpg" alt="Image 1">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/4fpKZLb/IMG-3934.jpg" alt="Image 2">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/pfT50JY/IMG-3899.jpg" alt="Image 3">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/7bNfMP1/IMG-3898.jpg" alt="Image 4">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/dPY4nk2/IMG-3896.jpg" alt="Image 5">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Second Row -->
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/K235ZMx/IMG-3897.jpg" alt="Image 6">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/sPv1xR4/IMG-3933.jpg" alt="Image 7">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/mXdqXbL/IMG-3932.jpg" alt="Image 8">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/BN1Hg7j/IMG-3931.jpg" alt="Image 9">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/YRdSwwX/IMG-3929.jpg" alt="Image 10">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Third Row -->
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/h85T9Kk/IMG-3927.jpg" alt="Image 11">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/nrxtJVv/IMG-3926.jpg" alt="Image 12">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/Cb2XbLn/IMG-3925.jpg" alt="Image 13">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/LhzJg56/IMG-3924.jpg" alt="Image 14">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="img-container">
+                    <img src="https://i.ibb.co/3WJ9CFt/IMG-3923.jpg" alt="Image 15">
+                </div>
+            </div>
         </div>
     </div>
     
